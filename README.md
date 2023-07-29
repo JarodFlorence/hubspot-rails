@@ -15,15 +15,13 @@ This is a simple Ruby on Rails application that integrates with HubSpot CRM to r
 ### Clone the repository
 
 ```bash
-git clone https://github.com/username/HubSpotApp.git
+git clone https://github.com/JarodFlorence/hubspot-rails.git
 ```
-
-Replace `username` with your GitHub username.
 
 ### Install Ruby dependencies
 
 ```bash
-cd HubSpotApp
+cd hubspot-rails
 bundle install
 ```
 
