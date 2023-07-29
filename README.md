@@ -1,7 +1,54 @@
-# GitHub Codespaces ♥️ Ruby on Rails
+---
 
-Welcome to your shiny new Codespace running Rails! We've got everything fired up and running for you to explore Rails.
+# HubSpot API Integration
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+This is a simple Ruby on Rails application that integrates with HubSpot CRM to retrieve and display contacts.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## Requirements
+
+- Ruby 2.7.3 or higher
+- Rails 6.1.4 or higher
+- HubSpot API Key
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/username/HubSpotApp.git
+```
+
+Replace `username` with your GitHub username.
+
+### Install Ruby dependencies
+
+```bash
+cd HubSpotApp
+bundle install
+```
+
+### Set up your environment variables
+
+You need to provide your HubSpot API key as an environment variable:
+
+```bash
+echo "HUBSPOT_API_KEY=your_key_here" > .env
+```
+
+Replace `your_key_here` with your HubSpot API key. Make sure not to commit your `.env` file to version control - it's already ignored in the `.gitignore`.
+
+### Start the server
+
+```bash
+rails server
+```
+
+Now you can visit `http://localhost:3000` to view your contacts in HubSpot CRM.
+
+## Contributing
+
+We welcome contributions! Please open an issue or submit a pull request for any changes.
+
+---
+
+Remember to replace the placeholders with actual data, and expand the README as needed for your project. You may also want to add more sections, like a 'Testing' section if you add tests to your project, or a 'Deployment' section if there's anything specific needed for deploying your app.
