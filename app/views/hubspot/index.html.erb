@@ -7,3 +7,24 @@
     </li>
   <% end %>
 </ul>
+
+<h1>Create a New Contact</h1>
+
+<%= form_tag("/hubspot", method: "post") do %>
+  <div>
+    <%= label_tag(:first_name, "First name:") %>
+    <%= text_field_tag(:first_name) %>
+  </div>
+  
+  <div>
+    <%= label_tag(:last_name, "Last name:") %>
+    <%= text_field_tag(:last_name) %>
+  </div>
+  
+  <div>
+    <%= label_tag(:email, "Email:") %>
+    <%= text_field_tag(:email) %>
+  </div>
+  
+  <%= submit_tag("Create Contact") %>
+<% end %>
